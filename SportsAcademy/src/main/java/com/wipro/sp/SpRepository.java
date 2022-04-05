@@ -1,11 +1,9 @@
-package com.wipro.spa;
+package com.wipro.sp;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-
-
 @Repository
-public interface SpaRepository extends JpaRepository<StudentSubscriptionModel, Integer> {
+public interface SpRepository extends JpaRepository<StudentSubscriptionModel, Integer> {
 
 }

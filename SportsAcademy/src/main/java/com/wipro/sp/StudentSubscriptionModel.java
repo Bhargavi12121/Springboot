@@ -1,4 +1,4 @@
-package com.wipro.spa;
+package com.wipro.sp;
 
 import java.util.List;
 

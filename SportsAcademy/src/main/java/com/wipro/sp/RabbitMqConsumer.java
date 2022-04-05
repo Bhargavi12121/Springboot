@@ -1,4 +1,4 @@
-package com.wipro.spa;
+package com.wipro.sp;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 public class RabbitMqConsumer {
 	
 	@Autowired
-	SpaRepository repository;
+	SpRepository repository;
 
 	@RabbitListener(queues = "${rabbitmq.queue}")
 	public void recievedMessage(StudentSubscriptionModel stusub) {

@@ -1,4 +1,4 @@
-package com.wipro.spa;
+package com.wipro.sp;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SpaController {
+public class SpController {
 	
 	@GetMapping("/sports")
 	public List<String> getAllSports(){
