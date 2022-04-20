@@ -6,7 +6,9 @@ spring:
   cloud:
     config:
       label: master
-      uri: http://172.17.0.2:8888
+      uri: http://localhost:8888
+  main:
+     allow-bean-definition-overriding: true
 #spring:
 #  application:
 #    name: student-config-client
