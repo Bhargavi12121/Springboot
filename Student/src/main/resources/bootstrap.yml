@@ -9,7 +9,7 @@ spring:
   application:
     name: student-config-client
   config:
-    import: configserver:http://172.17.0.2:8888
+    import: configserver:http://localhost:8888
   main:
     allow-bean-definition-overriding: true
   cloud:
