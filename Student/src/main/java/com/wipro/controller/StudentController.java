@@ -42,7 +42,7 @@ public class StudentController {
 	@GetMapping("/student/{id}")
 	public ResponseEntity<Student>  getStudentById(@PathVariable int id){
 		Optional<Student> stulist=service.getStudentByName(id);
-		if(stulist.isEmpty())
+		if(stulist==null)
 			return ResponseEntity.noContent().build();
 		return ResponseEntity.ok(stulist.get());
 	}
