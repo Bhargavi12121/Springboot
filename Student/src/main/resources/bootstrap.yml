@@ -1,7 +1,14 @@
-spring.application.name = student-config-client
-spring.config.import=configserver:http://172.17.0.2:8888
-spring.main.allow-bean-definition-overriding=true
-spring.cloud.config.server.bootstrap=true
+spring:
+  application:
+    name: student-config-client
+  config:
+    import: configserver:http://172.17.0.2:8888
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    config:
+      server:
+        bootstrap: true
 
 #server.port=9098
 #
